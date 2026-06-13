@@ -1,10 +1,11 @@
 here are my hacky scripts
 
 mappm.line & fullCoasts.line are lat,lon maps of the globe
+i had to gzip fullCoasts.line to get github to accept it
 
 i use gnuplot for plotting (the .des files contain various commands)
 
-path.raw      is the data i got from the IMAGES folder
+path.raw      is the data i got from the .jpg files
 processRay.py convert path.raw into a set of data files-> enolaGayPath.txt 6km.dat 10mi.dat shikoku.dat
 evalManeu.py  takes the results of "The Math Of Saving The Enola Gay" by Dr. Jorge S. Diaz (youtuber)
               and generates a plot of the data
