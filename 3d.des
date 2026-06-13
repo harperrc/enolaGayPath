@@ -1,0 +1,10 @@
+set xrange [ 130.000 : 142.000 ]
+set yrange [ 22.0000 : 38.0000 ]
+set xyplane relative 0
+set view 68,345
+
+spl 'enolaGayPath.txt' u 2:3:4 w lp lw 3 ps 2 pt 7 tit '',\
+            '' u ($8 == 1 ? $2 : 1/0):3:4:7 w labels tit '',\
+    'bmbpath.txt' u 2:3:4 @ml4 tit '',\
+    'mappm.line' w l lt -1 lw 2 tit '',\
+    "<echo 132.45 34.38 0" pt 4 ps 2 lw 2 tit ''

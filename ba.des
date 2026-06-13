@@ -1,0 +1,6 @@
+set key left
+set xlabel "Turn Angle (Deg)"
+set ylabel "S (Meters)"
+set label "153.5" at 153.500,16858.12 center
+p "ba.out" u ($4 == 0 ? $1 : 1/0):2 @ml4 tit "Solution",\
+    "" u ($4 == 1 ? $1 : 1/0):2 @ml4 tit ""

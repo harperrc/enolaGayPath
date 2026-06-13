@@ -1,0 +1,14 @@
+set xrange [ 130.000 : 144.000 ]
+set yrange [ 20.0000 : 38.0000 ]
+set xyplane relative 0
+set view 0,0
+latoff = 1.65
+lonoff = 1.50
+
+p 'enolaGayPath.txt' u 2:3 w lp lw 3 ps 2 pt 7 tit '',\
+                  '' u 2:3:7 w labels tit '',\
+    'mappm.line' w l lt -1 lw 2 tit '',\
+    '6km.dat' w l lt 2 lw 4 tit '6km',\
+    '10mi.dat' w l lt 4 lw 4 tit '10mi',\
+    'shikoku.dat' w l lt 5 lw 4 tit 'shikoku',\
+    "<echo 132.45 34.38" pt 4 ps 2 lw 2 tit ''
